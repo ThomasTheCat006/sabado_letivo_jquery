@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicações com jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt hic magnam esse dolor, nostrum molestiae totam expedita, inventore quo officia soluta, aliquam nisi quas odit voluptas possimus tempore similique quod.
+Unde at minima dolor, perferendis explicabo neque cupiditate illo fugit tempore ab, aliquam corrupti? Deserunt, dolor fuga. Voluptates, fugit? Repudiandae, quod? Repellat reiciendis placeat aspernatur ipsam aliquam! Incidunt, saepe est!</p>
+
+
+
+<button id="btn1">Colorir paragrafo</button>
+<button id="btn2">Esconder paragrafo</button>
+<button id="btn3">Aparecer paragrafo novamente</button>
+<button id="btn4">Tornar preto novamente</button>
+
+<script>
+
+  $("#btn1").click(function(){
+    $(".p1").css({'color': 'blue'});
+  });
+
+  $("#btn2").click(function(){
+    $(".p1").hide();
+  });
+
+  $("#btn3").click(function(){
+    $(".p1").show();
+  });
+
+  $("#btn4").click(function(){
+    $(".p1").css({'color': 'black'});
+  });
+
+
+</script>
+</body>
+</html>
